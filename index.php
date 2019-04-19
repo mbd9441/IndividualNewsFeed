@@ -25,7 +25,7 @@
 					$.post(ajaxurl, {'action':'checkcreds','username':username,'password':password}, function (response) {
 						if(response=="true"){
 							$.post(ajaxurl, {'action':'login','username':username,'password':password,'OSName':OSName,'browser':browser,'datetime':datetime,'geolocation':geolocation}, function (response) {
-								window.location.href = "newsfeed.php";
+								window.location.href = "Newsfeed.php";
 							});
 						} else {
 							document.getElementById("msg").innerHTML = "Incorrect Credentials";
@@ -95,7 +95,7 @@
 				<div class="formrow"><b class="label">Username:</b> <input type = "text" name = "username" id="username" required autofocus></div>
 				<div class="formrow"><b class="label">Password:</b> <input type = "password"  name = "password" id="password" required></div>
 				<button class = "button" onclick="loginuser()">Login</button>
-				<p> Need an account? Register <a href="register.php"> here. </p>
+				<p> Need an account? Register <a href="Register.php"> here. </p>
 			</div>
 		</div> 
    </body>

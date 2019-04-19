@@ -15,6 +15,7 @@ body * {
 	margin: auto;
 	text-align: center;
 }
+
 #headerbanner {
 	background-color: var(--color1);
 	height: 50px;
