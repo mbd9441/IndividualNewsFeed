@@ -1,0 +1,163 @@
+:root {
+	--color1: #2b2c2d
+}
+body {
+	margin: auto;
+}
+/* reset styling */
+body * {
+	margin: 0;
+	padding: 0;
+}
+
+.page {
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+}
+#headerbanner {
+	background-color: var(--color1);
+	height: 50px;
+}
+
+#msg {
+	color: red;
+}
+
+.form {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+	border: 1px solid red;
+	padding: 10px;
+	margin: auto;
+	margin-top: 50px;
+	height: 150px;
+	overflow: auto;
+}
+
+.formrow{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	width:75%;
+}
+
+.button {
+	width: 75px;
+}
+
+.form h2 {
+	font-family: "Arial";
+}
+
+#header {
+	height: 50px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: left;
+	align-items: center;
+	font-family: "Arial";
+	color: white;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+#logo {
+	margin-right: 25px;
+}
+
+#title {
+	font-weight: normal;
+	flex-grow: 10;
+	text-align: left;
+}
+
+#userdisplay {
+	text-align: right;
+}
+
+.datetime {
+	font-size: 0.6em;
+}
+
+#selectionform {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: left;
+}
+
+#headerselectors{
+	flex-grow: 10;
+}
+
+.selectorcontainer{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0.5em;
+}
+
+.selector {
+	margin-left: 10px;
+	margin-right: 2px;
+}
+
+.item {
+	border: 1px solid red;
+	padding: 1em;
+	margin: 0.5em;
+	text-align: left;
+}
+
+.headerrow {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.item h2 {
+	font-size: 1.5em;
+	padding-bottom: 0.2em;
+	font-family: "Arial";
+	flex-grow: 10;
+}
+
+.footerrow {
+	text-align: right;
+}
+
+.refresh {
+	cursor: pointer;
+	height: 0.75em;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.lilicon {
+	height: 1.5em;
+	padding-left: 5px;
+}
+
+.favorite-me {
+	cursor: pointer;
+	height: 1.5em;
+	margin-left: 5px;
+}
+
+.logout {
+	cursor: pointer;
+	height: 0.75em;
+	margin-left: 5px;
+}
+
+.newspic {
+	width: 100%;
+}
+
+.item p {
+	padding-top: 0.2em;
+}
