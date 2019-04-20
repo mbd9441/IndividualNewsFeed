@@ -114,7 +114,11 @@
 			$.post(ajaxurl, {'action':'checkfavorite','article':xmlText}, function (response) {
 				if (response=="false"){
 					$.post(ajaxurl, {'action':'favorite','article':xmlText}, function (response) {} );
+					alert("You favorited this article! Check the favoritesd tab to view it!")
 				}
+			} else {
+				alert("you already favorited this article!")
+			}
 			} );
 		}
 
@@ -124,6 +128,7 @@
 			$.post(ajaxurl, {'action':'unfavorite','article':xmlText}, function (response) 
 			{
 				loadfavorites();
+				alert("You unfavorited the article")
 			} );
 		}
 		
